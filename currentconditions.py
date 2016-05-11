@@ -8,8 +8,8 @@ class CurrentConditions():
 
     def display(self):
         current_conditions = self.f.json()
-        print(current_conditions['current_observation']['weather'])
-        print(current_conditions['current_observation']["temp_f"])
-        print(current_conditions['current_observation']["relative_humidity"])
-        print(current_conditions['current_observation']["wind_string"])
-        print(current_conditions['current_observation']['feelslike_f'])
+        print('\n Current Weather: \n', current_conditions['current_observation']['weather'])
+        print('\n Current Temp \n', current_conditions['current_observation']["temp_f"])
+        print('\n Relative Humidity\n', current_conditions['current_observation']["relative_humidity"])
+        print('\n Wind \n', current_conditions['current_observation']["wind_string"])
+        print('\n Feels Like: \n', current_conditions['current_observation']['feelslike_f'])

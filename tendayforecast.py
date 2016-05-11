@@ -8,4 +8,8 @@ class TenDayForecast():
 
     def display(self):
         ten_day_forecast = self.f.json()
-        print(ten_day_forecast['forecast']['simpleforecast'])
+        ten_day_forecast = ten_day_forecast['forecast']['txt_forecast']['forecastday']
+        for day_forecast in ten_day_forecast:
+            day= day_forecast['title']
+            weather= day_forecast['fcttext']
+            print(day, '\n', weather, '\n')

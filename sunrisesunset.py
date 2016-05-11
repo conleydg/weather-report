@@ -8,7 +8,5 @@ class SunriseSunset():
 
     def display(self):
         sunrise_sunset = self.f.json()
-        print(sunrise_sunset['moon_phase']['sunrise']['hour'])
-        print(sunrise_sunset['moon_phase']['sunrise']['minute'])
-        print(sunrise_sunset['moon_phase']['sunset']['hour'])
-        print(sunrise_sunset['moon_phase']['sunset']['minute'])
+        print('Sunrise- ', sunrise_sunset['moon_phase']['sunrise']['hour'], ':', sunrise_sunset['moon_phase']['sunrise']['minute'])
+        print('Sunset- ', sunrise_sunset['moon_phase']['sunset']['hour'], ':', sunrise_sunset['moon_phase']['sunset']['minute'])
